@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Economic Analytics Institute | Research, Data & Policy</title>
+
+  <meta name="description"
+        content="Economic Analytics Institute (EAI): investigación económica independiente, datos, herramientas cuantitativas y análisis de políticas con foco en Bolivia y América Latina." />
+  <meta name="author" content="Economic Analytics Institute" />
+  <meta name="theme-color" content="#5c2335" />
+
+  <meta property="og:title" content="Economic Analytics Institute" />
+  <meta property="og:description"
+        content="Investigación económica independiente, datos y análisis de políticas con foco en Bolivia y América Latina." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/brand/eai-favicon.png" />
+  <link rel="shortcut icon" href="assets/brand/eai-favicon.png" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="Economic Analytics Institute">
+      <img src="assets/brand/eai-logo-header.png"
+           alt="Economic Analytics Institute"
+           class="brand-logo" />
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#terminal" data-i18n="nav.monitor">Monitor</a>
+      <a href="#insights" data-i18n="nav.insights">Insights</a>
+      <a href="#research" data-i18n="nav.research">Investigación</a>
+      <a href="#publications" data-i18n="nav.publications">Publicaciones</a>
+      <a href="#dashboards" data-i18n="nav.dashboards">Dashboards</a>
+      <a href="#about" data-i18n="nav.about">Instituto</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="language-switch" aria-label="Language">
+        <button class="lang-btn active" data-lang="es">ES</button><span>/</span><button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="mini-ai" id="openChatTop" aria-label="Research Assistant">AI</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- Bloomberg-style data ribbon -->
+<section class="market-ribbon" id="terminal">
+  <div class="ribbon-label">
+    <span class="live-dot"></span>
+    <strong data-i18n="ribbon.title">BOLIVIA ECONOMIC MONITOR</strong>
+    <small data-i18n="ribbon.note">Fuentes oficiales · último dato disponible</small>
+  </div>
+
+  <div class="ticker-track">
+    <article class="ticker-item">
+      <div><span data-i18n="tick.fx">TCO</span><small>BCB · 24 AGO</small></div>
+      <strong>11,50</strong><em>Bs/USD</em>
+      <span class="ticker-move positive">↓ 0,17%</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.cpi">IPC 12M</span><small>INE · JUL 2026</small></div>
+      <strong>4,93%</strong><em>YoY</em>
+      <span class="ticker-move positive">↓ 4,30 pp</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.cpiM">IPC MES</span><small>INE · JUL 2026</small></div>
+      <strong>-2,79%</strong><em>m/m</em>
+      <span class="ticker-move positive" data-i18n="tick.normalization">normalización</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.rin">RIN*</span><small>BCB · 31 JUL</small></div>
+      <strong>3.361,3</strong><em>USD MM</em>
+      <span class="ticker-move neutral" data-i18n="tick.latest">último corte</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.base">BASE MON.</span><small>BCB · 19 AGO</small></div>
+      <strong>126.822</strong><em>Bs MM</em>
+      <span class="ticker-move neutral">+11,0% 12m</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.tre">TRe MN</span><small>BCB · AGO 2026</small></div>
+      <strong>3,57%</strong><em>rate</em>
+      <span class="ticker-move neutral" data-i18n="tick.reference">referencia</span>
+    </article>
+    <article class="ticker-item">
+      <div><span data-i18n="tick.gold">ORO</span><small>BCB · 24 AGO</small></div>
+      <strong>4.624,20</strong><em>USD/oz</em>
+      <span class="ticker-move neutral" data-i18n="tick.international">internacional</span>
+    </article>
+  </div>
+</section>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-topline">
+      <p class="eyebrow">Research · Data · Policy</p>
+      <div class="terminal-status"><span></span><span data-i18n="hero.updated">Actualizado con fuentes oficiales</span></div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 data-i18n="hero.title">La economía boliviana, leída con datos.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">
+          Investigación independiente, monitoreo económico y herramientas cuantitativas
+          para entender qué está cambiando, por qué importa y qué evidencia respalda la lectura.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#insights" data-i18n="hero.latest">Ver análisis recientes</a>
+          <button class="btn secondary" id="openChatHero" data-i18n="hero.ask">Preguntar al Research Assistant</button>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="hero-side-title">
+          <span data-i18n="hero.now">AHORA</span>
+          <small>24.08.2026</small>
+        </div>
+        <div class="now-item">
+          <span class="signal burgundy"></span>
+          <div><strong data-i18n="now.fx">Mercado cambiario</strong><p data-i18n="now.fxp">El TCO se ubica en Bs 11,50/USD, por debajo de los máximos observados a inicios de agosto.</p></div>
+        </div>
+        <div class="now-item">
+          <span class="signal copper"></span>
+          <div><strong data-i18n="now.prices">Precios</strong><p data-i18n="now.pricesp">Julio registra una corrección mensual de -2,79%; la inflación a 12 meses baja a 4,93%.</p></div>
+        </div>
+        <div class="now-item">
+          <span class="signal graphite"></span>
+          <div><strong data-i18n="now.policy">Política monetaria</strong><p data-i18n="now.policyp">Las tasas operativas permanecen elevadas en un entorno de transición monetaria y cambiaria.</p></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Main research intelligence -->
+<section class="section intelligence-section" id="insights">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow" data-i18n="ins.kicker">Latest research intelligence</p>
+        <h2 data-i18n="ins.title">Lo que estamos viendo</h2>
+      </div>
+      <div class="section-side-note">
+        <span data-i18n="ins.note1">Notas breves basadas en datos</span>
+        <strong data-i18n="ins.note2">no titulares de prensa</strong>
+      </div>
+    </div>
+
+    <div class="insights-layout">
+      <article class="insight-feature">
+        <div class="insight-visual">
+          <div class="chart-header">
+            <span data-i18n="feature.label">TIPO DE CAMBIO OFICIAL</span>
+            <strong>Bs/USD</strong>
+          </div>
+          <svg viewBox="0 0 720 265" role="img" aria-label="Stylized exchange-rate mini chart">
+            <line x1="25" y1="220" x2="695" y2="220" class="gridline"/>
+            <line x1="25" y1="155" x2="695" y2="155" class="gridline"/>
+            <line x1="25" y1="90" x2="695" y2="90" class="gridline"/>
+            <polyline points="28,215 95,205 160,193 225,145 290,72 355,88 420,112 485,129 550,143 615,151 690,157" class="chart-line"/>
+            <circle cx="290" cy="72" r="5" class="chart-point"/>
+            <circle cx="690" cy="157" r="5" class="chart-point current"/>
+            <text x="274" y="55">12,23</text>
+            <text x="647" y="145">11,50</text>
+            <text x="25" y="247">03 AGO</text>
+            <text x="635" y="247">24 AGO</text>
+          </svg>
+          <div class="chart-caption"><span>▲ 03 AGO</span><span data-i18n="feature.today">● último dato</span></div>
+        </div>
+        <div class="insight-copy">
+          <div class="insight-meta"><span>Market Brief</span><time>24 AGO 2026</time></div>
+          <h3 data-i18n="feature.title">El boliviano corrige parte de la depreciación observada a inicios de agosto.</h3>
+          <p data-i18n="feature.body">
+            Desde el máximo de Bs 12,23/USD del 3 de agosto, el TCO se redujo hasta Bs 11,50/USD.
+            La señal inmediata es una menor presión cambiaria respecto del pico, aunque la lectura estructural
+            requiere mirar liquidez, intervención y flujos de divisas.
+          </p>
+          <div class="insight-actions">
+            <a href="#dashboards" class="text-link" data-i18n="feature.dashboard">Ver dashboard cambiario →</a>
+            <button class="text-link ask-insight" data-question-es="¿Qué explica la corrección reciente del tipo de cambio en Bolivia?" data-question-en="What explains the recent correction in Bolivia's exchange rate?" data-i18n="feature.ask">Preguntar a EAI AI →</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="insight-stack">
+        <article class="insight-card">
+          <div class="insight-card-top"><span class="topic">Prices</span><time>04 AGO 2026</time></div>
+          <div class="spark bars">
+            <i style="height:55%"></i><i style="height:74%"></i><i style="height:92%"></i><i style="height:68%"></i><i style="height:31%"></i><i class="last" style="height:18%"></i>
+          </div>
+          <h3 data-i18n="card1.title">La desinflación de julio es fuerte, pero su composición importa.</h3>
+          <p data-i18n="card1.body">El IPC cayó 2,79% mensual tras la normalización del abastecimiento. La siguiente pregunta es cuánto de esa corrección será persistente.</p>
+          <a href="#publications" class="text-link" data-i18n="ins.read">Leer análisis →</a>
+        </article>
+
+        <article class="insight-card">
+          <div class="insight-card-top"><span class="topic">Monetary</span><time>19 AGO 2026</time></div>
+          <div class="metric-pair">
+            <div><small data-i18n="card2.base">Base monetaria</small><strong>126.822</strong><span>Bs MM</span></div>
+            <div><small data-i18n="card2.yoy">12 meses</small><strong>+11,0%</strong><span>YoY</span></div>
+          </div>
+          <h3 data-i18n="card2.title">La señal monetaria debe leerse junto con tasas, encaje y liquidez.</h3>
+          <p data-i18n="card2.body">Un agregado monetario aislado no resume la postura monetaria. EAI propone una lectura conjunta de instrumentos y condiciones financieras.</p>
+          <a href="#dashboards" class="text-link" data-i18n="ins.explore">Explorar datos →</a>
+        </article>
+
+        <article class="insight-card compact-risk">
+          <div class="insight-card-top"><span class="topic">Risk Watch</span><time>SEMANA 34</time></div>
+          <div class="risk-row"><span data-i18n="risk.fx">Volatilidad cambiaria</span><strong class="risk-mid" data-i18n="risk.mid">MEDIA</strong></div>
+          <div class="risk-row"><span data-i18n="risk.prices">Persistencia inflacionaria</span><strong class="risk-mid" data-i18n="risk.mid">MEDIA</strong></div>
+          <div class="risk-row"><span data-i18n="risk.external">Liquidez externa</span><strong class="risk-watch" data-i18n="risk.watch">VIGILAR</strong></div>
+          <p class="risk-disclaimer" data-i18n="risk.note">Indicadores analíticos, no calificaciones crediticias.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A second terminal-like data layer -->
+<section class="section pulse-section">
+  <div class="container">
+    <div class="pulse-header">
+      <div><p class="eyebrow">EAI Economic Pulse</p><h2 data-i18n="pulse.title">Una lectura en 60 segundos</h2></div>
+      <div class="pulse-time"><span data-i18n="pulse.cut">Corte analítico</span><strong>24 AGO 2026 · 10:20 BOT</strong></div>
+    </div>
+
+    <div class="pulse-grid">
+      <article><span class="pulse-number">01</span><small data-i18n="pulse.p1k">CAMBIARIO</small><h3 data-i18n="pulse.p1">Corrección desde máximos, pero régimen aún en fase de descubrimiento.</h3></article>
+      <article><span class="pulse-number">02</span><small data-i18n="pulse.p2k">INFLACIÓN</small><h3 data-i18n="pulse.p2">La normalización de oferta reduce el IPC; vigilar núcleo y persistencia.</h3></article>
+      <article><span class="pulse-number">03</span><small data-i18n="pulse.p3k">MONETARIO</small><h3 data-i18n="pulse.p3">Tasas operativas altas refuerzan una postura contractiva.</h3></article>
+      <article><span class="pulse-number">04</span><small data-i18n="pulse.p4k">EXTERNO</small><h3 data-i18n="pulse.p4">Reservas y disponibilidad líquida siguen siendo variables críticas.</h3></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-section" id="research">
+  <div class="container">
+    <div class="section-head light-head">
+      <div><p class="eyebrow light">Research Agenda</p><h2 data-i18n="research.title">Investigación que se acumula, no contenido que desaparece.</h2></div>
+      <p data-i18n="research.lead">Cada línea conecta papers, datasets, código, dashboards y notas de coyuntura.</p>
+    </div>
+    <div class="research-grid">
+      <article><span>01</span><h3 data-i18n="research.r1">Macroeconomía y política monetaria</h3><p data-i18n="research.r1p">Inflación, crecimiento, dinero, reservas, régimen cambiario y transición a metas de inflación.</p></article>
+      <article><span>02</span><h3 data-i18n="research.r2">Precios y redes</h3><p data-i18n="research.r2p">Propagación de shocks, inflación sistémica, persistencia y formación de precios.</p></article>
+      <article><span>03</span><h3 data-i18n="research.r3">Finanzas y riesgo sistémico</h3><p data-i18n="research.r3p">Banca, liquidez, solvencia, contagio y estabilidad financiera.</p></article>
+      <article><span>04</span><h3>Data Science & AI</h3><p data-i18n="research.r4p">Nowcasting, NLP, LLMs, automatización, scraping y sistemas de información económica.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section publications-section" id="publications">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">Knowledge Repository</p><h2 data-i18n="pub.title">Research output</h2></div>
+      <button class="btn primary" id="openUpload" data-i18n="pub.upload">Subir paper</button>
+    </div>
+
+    <div class="publication-tabs">
+      <button class="pub-tab active" data-filter="all" data-i18n="pub.all">Todo</button>
+      <button class="pub-tab" data-filter="working">Working Papers</button>
+      <button class="pub-tab" data-filter="brief">Research Briefs</button>
+      <button class="pub-tab" data-filter="methods">Methods</button>
+      <button class="pub-tab" data-filter="data">Data Notes</button>
+    </div>
+
+    <div class="paper-list" id="paperList">
+      <article class="paper-row" data-kind="working">
+        <div class="paper-code"><span>WP</span><strong>2026/01</strong></div>
+        <div class="paper-main"><div class="paper-top"><span data-i18n="paper.area1">Inflación · Redes</span><time>2026</time></div><h3 data-i18n="paper.title1">¿Cuándo los shocks de precios se vuelven sistémicos?</h3><p data-i18n="paper.desc1">Redes dinámicas y cascadas de propagación inflacionaria en Bolivia.</p></div>
+        <div class="paper-cta"><button class="text-link ask-paper" data-paper="¿Cuándo los shocks de precios se vuelven sistémicos?">EAI AI ↗</button><span class="status-pill">Working Paper</span></div>
+      </article>
+
+      <article class="paper-row" data-kind="working">
+        <div class="paper-code"><span>WP</span><strong>2026/02</strong></div>
+        <div class="paper-main"><div class="paper-top"><span data-i18n="paper.area2">Política monetaria</span><time>2026</time></div><h3 data-i18n="paper.title2">Migración hacia metas de inflación en Bolivia</h3><p data-i18n="paper.desc2">Preparación institucional, ancla nominal, dominancia fiscal y régimen cambiario.</p></div>
+        <div class="paper-cta"><button class="text-link ask-paper" data-paper="Migración hacia metas de inflación en Bolivia">EAI AI ↗</button><span class="status-pill">Research</span></div>
+      </article>
+
+      <article class="paper-row" data-kind="methods">
+        <div class="paper-code"><span>MT</span><strong>2026/01</strong></div>
+        <div class="paper-main"><div class="paper-top"><span>Data Science</span><time>2026</time></div><h3 data-i18n="paper.title3">Nowcasting con datos de alta frecuencia y señales textuales</h3><p data-i18n="paper.desc3">Pipeline reproducible para actividad económica y monitoreo de coyuntura.</p></div>
+        <div class="paper-cta"><button class="text-link ask-paper" data-paper="Nowcasting con datos de alta frecuencia y señales textuales">EAI AI ↗</button><span class="status-pill">Methods</span></div>
+      </article>
+
+      <article class="paper-row" data-kind="brief">
+        <div class="paper-code"><span>RB</span><strong>2026/08</strong></div>
+        <div class="paper-main"><div class="paper-top"><span data-i18n="paper.area4">Coyuntura</span><time>24 AGO</time></div><h3 data-i18n="paper.title4">Bolivia Economic Pulse — Semana 34</h3><p data-i18n="paper.desc4">Tipo de cambio, inflación, liquidez y principales señales de riesgo.</p></div>
+        <div class="paper-cta"><button class="text-link ask-paper" data-paper="Bolivia Economic Pulse Semana 34">EAI AI ↗</button><span class="status-pill">Brief</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section dashboard-section" id="dashboards">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">Interactive Research</p><h2 data-i18n="dash.title">Dashboards y herramientas</h2></div>
+      <p data-i18n="dash.lead">Los tableros no son anexos: forman parte de la investigación y pueden actualizarse con mayor frecuencia que un paper.</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <article class="dashboard-card">
+        <div class="dashboard-screen macro-screen">
+          <div class="mini-top"><span>MACRO TERMINAL</span><small>LIVE</small></div>
+          <div class="mini-kpis"><i></i><i></i><i></i></div>
+          <svg viewBox="0 0 350 115"><polyline points="8,93 44,82 75,87 110,54 145,64 178,38 218,52 256,34 295,42 342,22"/></svg>
+        </div>
+        <div class="dashboard-copy"><span>01 · Macro</span><h3 data-i18n="dash.macro">Bolivia Macro Monitor</h3><p data-i18n="dash.macrop">Inflación, TCO, RIN, actividad, fiscal, monetario y sector externo.</p><button class="text-link open-dashboard" data-id="macro" data-i18n="dash.open">Abrir dashboard →</button></div>
+      </article>
+
+      <article class="dashboard-card">
+        <div class="dashboard-screen network-screen">
+          <div class="network-node n1"></div><div class="network-node n2"></div><div class="network-node n3"></div><div class="network-node n4"></div><div class="network-node n5"></div>
+          <svg viewBox="0 0 350 180"><line x1="55" y1="110" x2="170" y2="55"/><line x1="170" y1="55" x2="280" y2="95"/><line x1="55" y1="110" x2="180" y2="140"/><line x1="180" y1="140" x2="280" y2="95"/><line x1="170" y1="55" x2="180" y2="140"/></svg>
+        </div>
+        <div class="dashboard-copy"><span>02 · Prices</span><h3 data-i18n="dash.prices">Inflation Network Lab</h3><p data-i18n="dash.pricesp">Productos centrales, cascadas, incidencia, shocks y estructura de propagación.</p><button class="text-link open-dashboard" data-id="prices" data-i18n="dash.open">Abrir dashboard →</button></div>
+      </article>
+
+      <article class="dashboard-card">
+        <div class="dashboard-screen finance-screen">
+          <div class="gauge"><div></div><strong>RISK</strong></div>
+          <div class="finance-bars"><i style="height:45%"></i><i style="height:68%"></i><i style="height:52%"></i><i style="height:75%"></i><i style="height:61%"></i></div>
+        </div>
+        <div class="dashboard-copy"><span>03 · Finance</span><h3 data-i18n="dash.fin">Financial Stability Monitor</h3><p data-i18n="dash.finp">Mora, reprogramados, liquidez, capital, rentabilidad y señales de vulnerabilidad.</p><button class="text-link open-dashboard" data-id="financial" data-i18n="dash.open">Abrir dashboard →</button></div>
+      </article>
+
+      <article class="dashboard-card add-dashboard">
+        <div class="add-symbol">+</div>
+        <div class="dashboard-copy"><span>04+</span><h3 data-i18n="dash.more">Repositorio abierto de aplicaciones</h3><p data-i18n="dash.morep">Preparado para Streamlit, Shiny, Power BI, Tableau y herramientas propias.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="container">
+
+    <div class="about-intro-grid">
+      <div>
+        <p class="eyebrow" data-i18n="about.kicker">Sobre EAI</p>
+        <h2 data-i18n="about.title">Investigación económica independiente basada en evidencia.</h2>
+      </div>
+
+      <div class="about-intro-copy">
+        <p class="about-lead" data-i18n="about.intro">
+          Economic Analytics Institute (EAI) es una iniciativa independiente de investigación económica aplicada,
+          orientada al análisis riguroso de la economía boliviana y su relación con el entorno latinoamericano e internacional.
+        </p>
+        <p data-i18n="about.intro2">
+          El Instituto busca combinar investigación académica, datos, herramientas cuantitativas y análisis de política económica
+          bajo principios de independencia, transparencia, trazabilidad y reproducibilidad.
+        </p>
+      </div>
+    </div>
+
+    <div class="institution-block" id="mission">
+      <div class="institution-number">01</div>
+      <div class="institution-title">
+        <span data-i18n="about.missionLabel">PROPÓSITO</span>
+        <h3 data-i18n="about.missionTitle">Misión</h3>
+      </div>
+      <div class="institution-content">
+        <p data-i18n="about.mission">
+          Generar investigación económica independiente, rigurosa y reproducible que contribuya a mejorar la comprensión
+          de la economía boliviana y fortalezca el debate público basado en evidencia.
+        </p>
+      </div>
+    </div>
+
+    <div class="institution-block research-areas-block">
+      <div class="institution-number">02</div>
+      <div class="institution-title">
+        <span data-i18n="about.areasLabel">AGENDA</span>
+        <h3 data-i18n="about.areasTitle">Áreas de investigación</h3>
+      </div>
+
+      <div class="institution-content">
+        <div class="about-research-grid">
+          <article>
+            <span>01</span>
+            <h4 data-i18n="about.area1">Macroeconomía y política monetaria</h4>
+            <p data-i18n="about.area1p">Inflación, crecimiento, dinero, reservas internacionales, régimen cambiario, tasas de interés y transición hacia metas de inflación.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h4 data-i18n="about.area2">Precios y redes económicas</h4>
+            <p data-i18n="about.area2p">Propagación de shocks, persistencia inflacionaria, formación de precios, redes dinámicas y mecanismos de contagio.</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h4 data-i18n="about.area3">Estabilidad financiera y riesgo sistémico</h4>
+            <p data-i18n="about.area3p">Banca, liquidez, solvencia, rentabilidad, interconexiones, vulnerabilidad y contagio financiero.</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h4 data-i18n="about.area4">Data Science e Inteligencia Artificial</h4>
+            <p data-i18n="about.area4p">Nowcasting, procesamiento de lenguaje natural, modelos de lenguaje, automatización, scraping y sistemas de información.</p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <h4 data-i18n="about.area5">Política económica</h4>
+            <p data-i18n="about.area5p">Evaluación de políticas, sector fiscal, sector externo, reformas económicas y análisis institucional.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="institution-block" id="integrity">
+      <div class="institution-number">03</div>
+      <div class="institution-title">
+        <span data-i18n="about.principlesLabel">ESTÁNDARES</span>
+        <h3 data-i18n="about.principlesTitle">Principios de investigación</h3>
+      </div>
+
+      <div class="institution-content">
+        <div class="principles-grid">
+          <article>
+            <strong data-i18n="about.principle1">Independencia</strong>
+            <p data-i18n="about.principle1p">Los análisis, metodologías y conclusiones se desarrollan con autonomía técnica.</p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle2">Transparencia</strong>
+            <p data-i18n="about.principle2p">Las fuentes, definiciones, fechas de corte y supuestos deben ser identificables.</p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle3">Reproducibilidad</strong>
+            <p data-i18n="about.principle3p">Cuando sea posible, los trabajos incorporarán datos, código, anexos y documentación metodológica.</p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle4">Rigor metodológico</strong>
+            <p data-i18n="about.principle4p">Las conclusiones deben estar respaldadas por métodos explícitos y evidencia verificable.</p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle5">Integridad académica</strong>
+            <p data-i18n="about.principle5p">Se promueven la correcta citación, la declaración de conflictos de interés y la trazabilidad de resultados.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="institution-block people-block" id="people">
+      <div class="institution-number">04</div>
+      <div class="institution-title">
+        <span data-i18n="about.peopleLabel">PERSONAS</span>
+        <h3 data-i18n="about.peopleTitle">Dirección e investigación</h3>
+      </div>
+
+      <div class="institution-content">
+        <article class="researcher-card">
+          <div class="researcher-monogram">PCH</div>
+
+          <div class="researcher-main">
+            <span class="researcher-role" data-i18n="about.role">Fundador y Economista Principal</span>
+            <h4>Pablo Cachaga Herrera</h4>
+            <p data-i18n="about.pabloBio">
+              Economista e investigador con interés en macroeconomía, política monetaria, inflación,
+              estabilidad financiera, redes económicas y métodos cuantitativos aplicados.
+            </p>
+
+            <div class="researcher-fields">
+              <span data-i18n="about.field1">Macroeconomía</span>
+              <span data-i18n="about.field2">Política monetaria</span>
+              <span data-i18n="about.field3">Inflación</span>
+              <span data-i18n="about.field4">Redes</span>
+              <span data-i18n="about.field5">Estabilidad financiera</span>
+              <span>Data Science</span>
+            </div>
+
+            <div class="researcher-links">
+              <a href="#publications" data-i18n="about.publicationsLink">Publicaciones</a>
+              <a href="#" class="coming-link">ORCID</a>
+              <a href="#" class="coming-link">Google Scholar</a>
+              <a href="#" class="coming-link">LinkedIn</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="institution-block editorial-block" id="editorial">
+      <div class="institution-number">05</div>
+      <div class="institution-title">
+        <span data-i18n="about.integrityLabel">GOBERNANZA</span>
+        <h3 data-i18n="about.integrityTitle">Integridad y política editorial</h3>
+      </div>
+
+      <div class="institution-content">
+        <p data-i18n="about.integrityIntro">
+          EAI busca aplicar estándares claros para la producción, revisión, publicación y actualización
+          de sus investigaciones y productos analíticos.
+        </p>
+
+        <div class="policy-grid">
+          <article>
+            <span>01</span>
+            <strong data-i18n="about.policy1">Política editorial</strong>
+            <p data-i18n="about.policy1p">Criterios para publicación, revisión, clasificación y actualización de documentos.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <strong data-i18n="about.policy2">Datos y reproducibilidad</strong>
+            <p data-i18n="about.policy2p">Documentación de fuentes, transformaciones, código y anexos cuando las restricciones de datos lo permitan.</p>
+          </article>
+
+          <article id="conflicts">
+            <span>03</span>
+            <strong data-i18n="about.policy3">Conflictos de interés</strong>
+            <p data-i18n="about.policy3p">Los autores deberán declarar relaciones que puedan ser relevantes para la interpretación de un trabajo.</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <strong data-i18n="about.policy4">Correcciones y versiones</strong>
+            <p data-i18n="about.policy4p">Los documentos podrán registrar versiones, correcciones y actualizaciones de manera trazable.</p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <strong data-i18n="about.policy5">Uso responsable de IA</strong>
+            <p data-i18n="about.policy5p">Las herramientas de inteligencia artificial pueden apoyar procesos de investigación, pero no sustituyen la responsabilidad intelectual de los autores.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="institution-contact">
+      <div>
+        <p class="eyebrow" data-i18n="about.contactLabel">CONTACTO</p>
+        <h3 data-i18n="about.contactTitle">Investigación, datos y colaboración.</h3>
+      </div>
+
+      <div>
+        <p data-i18n="about.contactText">Para consultas académicas, colaboración, acceso a investigación o información institucional:</p>
+        <a class="institution-email" href="mailto:economic.analytics.institute@gmail.com">economic.analytics.institute@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section lab-section">
+  <div class="container lab-grid">
+    <div>
+      <p class="eyebrow">EAI Research Assistant</p>
+      <h2 data-i18n="ai.title">Que el chatbot conozca tu producción, no todo Internet.</h2>
+      <p data-i18n="ai.body">El asistente puede conectarse al repositorio de EAI y responder utilizando papers, notas, datasets y documentos seleccionados, con referencias a la fuente.</p>
+      <button class="btn primary" id="openChatBottom" data-i18n="ai.try">Probar interfaz</button>
+    </div>
+    <div class="terminal">
+      <div class="terminal-bar"><span></span><span></span><span></span><small>EAI / RAG</small></div>
+      <code>&gt; index_repository()</code><code class="ok">✓ papers indexed</code>
+      <code>&gt; verify_sources()</code><code class="ok">✓ traceable citations</code>
+      <code>&gt; query("inflation propagation")</code><code class="accent">✓ answer grounded in EAI research</code>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="brand footer-brand"><span class="brand-mark">EAI</span><span class="brand-name"><strong>Economic Analytics</strong><small>Institute</small></span></div>
+      <p>Research · Data · Policy</p>
+    </div>
+    <div><strong data-i18n="footer.research">Investigación</strong><a href="#publications">Working Papers</a><a href="#insights">Research Briefs</a><a href="#dashboards">Dashboards</a></div>
+    <div><strong data-i18n="footer.integrity">Integridad</strong><a href="#integrity" data-i18n="footer.methods">Metodología y estándares</a><a href="#editorial" data-i18n="footer.editorial">Política editorial</a><a href="#conflicts" data-i18n="footer.conflicts">Conflictos de interés</a></div>
+  </div>
+  <div class="container source-note">
+    <p data-i18n="footer.sources">Indicadores mostrados en portada: fuentes oficiales BCB e INE. Cada serie debe conservar fecha de corte, definición y enlace de origen en producción.</p>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Economic Analytics Institute</span><span data-i18n="footer.independent">Investigación económica independiente · Bolivia / América Latina</span></div>
+</footer>
+
+<button class="chat-fab" id="chatFab">AI</button>
+
+<div class="modal" id="chatModal" aria-hidden="true">
+  <div class="modal-card chat-card">
+    <button class="modal-close" data-close="chatModal">×</button>
+    <p class="eyebrow">EAI Research Assistant</p>
+    <h2 data-i18n="chat.title">Pregunta sobre la investigación.</h2>
+    <p class="modal-copy" data-i18n="chat.body">La interfaz está preparada para consultar un backend RAG con papers y documentos autorizados.</p>
+    <div class="chat-sources"><span>Working Papers</span><span>Research Briefs</span><span>Data Notes</span><span>Dashboards</span></div>
+    <div class="chat-messages" id="chatMessages"><div class="msg bot" data-i18n="chat.welcome">Hola. ¿Qué quieres consultar sobre la economía boliviana o la investigación de EAI?</div></div>
+    <form id="chatForm" class="chat-input"><input id="chatInput" data-i18n-placeholder="chat.placeholder" placeholder="Ej.: ¿Qué explica la caída reciente del TCO?" /><button class="btn primary" type="submit" data-i18n="chat.send">Enviar</button></form>
+    <small class="integration-note">POST /api/chat · language · sources · citations</small>
+  </div>
+</div>
+
+<div class="modal" id="uploadModal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" data-close="uploadModal">×</button>
+    <p class="eyebrow">EAI Repository</p><h2 data-i18n="upload.title">Subir publicación</h2>
+    <form id="uploadForm" class="upload-form">
+      <label><span data-i18n="upload.t">Título</span><input id="paperTitle" required></label>
+      <label><span data-i18n="upload.a">Autor(es)</span><input id="paperAuthors" required></label>
+      <label><span data-i18n="upload.k">Tipo</span><select id="paperKind"><option>Working Paper</option><option>Research Brief</option><option>Methods Note</option><option>Data Note</option></select></label>
+      <label><span data-i18n="upload.abs">Resumen</span><textarea id="paperAbstract" rows="4"></textarea></label>
+      <label class="dropzone">PDF<input id="paperFile" type="file" accept="application/pdf" required></label>
+      <button class="btn primary" type="submit" data-i18n="upload.send">Cargar e indexar</button><small id="uploadStatus"></small>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="dashboardModal" aria-hidden="true">
+  <div class="modal-card dashboard-modal-card">
+    <button class="modal-close" data-close="dashboardModal">×</button>
+    <p class="eyebrow">EAI Interactive Research</p><h2 id="dashboardModalTitle">Dashboard</h2>
+    <div class="dashboard-frame-wrap" id="dashboardFrameWrap"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
