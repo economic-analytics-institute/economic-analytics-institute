@@ -1,0 +1,614 @@
+{
+  "meta": {
+    "generated_at": "2026-08-24",
+    "language": "es",
+    "note": "Compilación EAI a partir de fuentes oficiales BCB e INE y bases de trabajo verificadas. Cada serie conserva su propia fecha de corte."
+  },
+  "kpis": {
+    "tco": {
+      "value": 11.5,
+      "unit": "Bs/USD",
+      "date": "2026-08-24",
+      "label": "Tipo de cambio oficial",
+      "peak": 12.15,
+      "peak_date": "2026-07-31",
+      "change_from_peak_pct": -5.35
+    },
+    "cpi_month": {
+      "value": -2.79,
+      "unit": "% m/m",
+      "date": "2026-07-01",
+      "label": "IPC mensual"
+    },
+    "cpi_yoy": {
+      "value": 4.93,
+      "unit": "% 12m",
+      "date": "2026-07-01",
+      "label": "IPC 12 meses"
+    },
+    "rin": {
+      "value": 4254.718,
+      "unit": "USD MM",
+      "date": "2026-08-14",
+      "label": "RIN BCB"
+    },
+    "rin_including_gold_obligations": {
+      "value": 3984.066,
+      "unit": "USD MM",
+      "date": "2026-08-14",
+      "label": "RIN incl. obligaciones relativas al oro"
+    },
+    "base_mn_ufv": {
+      "value": 127456.0,
+      "unit": "Bs MM",
+      "date": "2026-08-20",
+      "label": "Base monetaria MN+UFV",
+      "program_target": 134062.0,
+      "yoy": 11.2,
+      "accumulated": -3.6
+    },
+    "tre_mn": {
+      "value": 3.57,
+      "unit": "%",
+      "date": "2026-08-01",
+      "label": "TRe MN"
+    },
+    "gold": {
+      "value": 4624.2,
+      "unit": "USD/oz",
+      "date": "2026-08-24",
+      "label": "Oro"
+    },
+    "trade_balance": {
+      "value": 184.7,
+      "unit": "USD MM",
+      "date": "2026-06-01",
+      "label": "Saldo comercial mensual"
+    }
+  },
+  "series": {
+    "tco_daily": [
+      {
+        "date": "2026-06-29",
+        "tco": 9.73,
+        "volume_usd_mn": 17.323468,
+        "transactions": 290
+      },
+      {
+        "date": "2026-06-30",
+        "tco": 9.76,
+        "volume_usd_mn": 17.379767,
+        "transactions": 1659
+      },
+      {
+        "date": "2026-07-01",
+        "tco": 9.76,
+        "volume_usd_mn": 10.395157,
+        "transactions": 1306
+      },
+      {
+        "date": "2026-07-02",
+        "tco": 9.78,
+        "volume_usd_mn": 29.872825,
+        "transactions": 3257
+      },
+      {
+        "date": "2026-07-03",
+        "tco": 9.8,
+        "volume_usd_mn": 21.101076,
+        "transactions": 2134
+      },
+      {
+        "date": "2026-07-06",
+        "tco": 9.83,
+        "volume_usd_mn": 22.090693,
+        "transactions": 2048
+      },
+      {
+        "date": "2026-07-07",
+        "tco": 9.89,
+        "volume_usd_mn": 11.876844,
+        "transactions": 1211
+      },
+      {
+        "date": "2026-07-08",
+        "tco": 9.96,
+        "volume_usd_mn": 23.859096,
+        "transactions": 1109
+      },
+      {
+        "date": "2026-07-09",
+        "tco": 10.1,
+        "volume_usd_mn": 28.455257,
+        "transactions": 938
+      },
+      {
+        "date": "2026-07-10",
+        "tco": 10.24,
+        "volume_usd_mn": 29.768606,
+        "transactions": 930
+      },
+      {
+        "date": "2026-07-13",
+        "tco": 10.4,
+        "volume_usd_mn": 36.883973,
+        "transactions": 994
+      },
+      {
+        "date": "2026-07-14",
+        "tco": 10.5,
+        "volume_usd_mn": 11.528045,
+        "transactions": 1031
+      },
+      {
+        "date": "2026-07-15",
+        "tco": 10.7,
+        "volume_usd_mn": 42.988673,
+        "transactions": 1007
+      },
+      {
+        "date": "2026-07-16",
+        "tco": 10.75,
+        "volume_usd_mn": 18.128516,
+        "transactions": 1452
+      },
+      {
+        "date": "2026-07-20",
+        "tco": 10.85,
+        "volume_usd_mn": 37.816606,
+        "transactions": 1259
+      },
+      {
+        "date": "2026-07-21",
+        "tco": 10.9,
+        "volume_usd_mn": 0,
+        "transactions": 0
+      },
+      {
+        "date": "2026-07-22",
+        "tco": 11,
+        "volume_usd_mn": 0,
+        "transactions": 0
+      },
+      {
+        "date": "2026-07-23",
+        "tco": 11.13,
+        "volume_usd_mn": 39.038276,
+        "transactions": 1216
+      },
+      {
+        "date": "2026-07-24",
+        "tco": 11.21,
+        "volume_usd_mn": 28.56466,
+        "transactions": 1148
+      },
+      {
+        "date": "2026-07-27",
+        "tco": 11.37,
+        "volume_usd_mn": 38.397534,
+        "transactions": 1147
+      },
+      {
+        "date": "2026-07-28",
+        "tco": 11.54,
+        "volume_usd_mn": 21.140379,
+        "transactions": 1069
+      },
+      {
+        "date": "2026-07-29",
+        "tco": 11.8,
+        "volume_usd_mn": 38.853476,
+        "transactions": 1112
+      },
+      {
+        "date": "2026-07-30",
+        "tco": 11.89,
+        "volume_usd_mn": 41.659337,
+        "transactions": 1309
+      },
+      {
+        "date": "2026-07-31",
+        "tco": 12.15,
+        "volume_usd_mn": 38.725847,
+        "transactions": 1438
+      },
+      {
+        "date": "2026-08-03",
+        "tco": 12.13,
+        "volume_usd_mn": 41.162394,
+        "transactions": 1820
+      },
+      {
+        "date": "2026-08-04",
+        "tco": 12.08,
+        "volume_usd_mn": 26.814902,
+        "transactions": 1708
+      },
+      {
+        "date": "2026-08-05",
+        "tco": 12.02,
+        "volume_usd_mn": 159.940755,
+        "transactions": 3008
+      },
+      {
+        "date": "2026-08-06 al 2026-08-10",
+        "tco": 11.86,
+        "volume_usd_mn": 60.48304,
+        "transactions": 2044
+      },
+      {
+        "date": "2026-08-11",
+        "tco": 11.77,
+        "volume_usd_mn": 62.709169,
+        "transactions": 2036
+      },
+      {
+        "date": "2026-08-12",
+        "tco": 11.71,
+        "volume_usd_mn": 96.255618,
+        "transactions": 1553
+      },
+      {
+        "date": "2026-08-13",
+        "tco": 11.66,
+        "volume_usd_mn": 38.911851,
+        "transactions": 1443
+      },
+      {
+        "date": "2026-08-14",
+        "tco": 11.62,
+        "volume_usd_mn": 42.098061,
+        "transactions": 1225
+      },
+      {
+        "date": "2026-08-17",
+        "tco": 11.58,
+        "volume_usd_mn": 36.316075,
+        "transactions": 1223
+      },
+      {
+        "date": "2026-08-18",
+        "tco": 11.55,
+        "volume_usd_mn": 29.279047,
+        "transactions": 1242
+      },
+      {
+        "date": "2026-08-19",
+        "tco": 11.52,
+        "volume_usd_mn": 69.45918,
+        "transactions": 1103
+      },
+      {
+        "date": "2026-08-20",
+        "tco": 11.52,
+        "volume_usd_mn": 34.297489,
+        "transactions": 1161
+      },
+      {
+        "date": "2026-08-21",
+        "tco": 11.52,
+        "volume_usd_mn": 32.71109,
+        "transactions": 1175
+      },
+      {
+        "date": "2026-08-24",
+        "tco": 11.5,
+        "volume_usd_mn": null,
+        "transactions": null
+      }
+    ],
+    "inflation_monthly": [
+      {
+        "date": "2025-01-01",
+        "monthly": 1.9539,
+        "accumulated": 1.9539,
+        "yoy": 12.0344
+      },
+      {
+        "date": "2025-02-01",
+        "monthly": 1.263,
+        "accumulated": 3.2416,
+        "yoy": 13.2231
+      },
+      {
+        "date": "2025-03-01",
+        "monthly": 1.7078,
+        "accumulated": 5.0048,
+        "yoy": 14.6339
+      },
+      {
+        "date": "2025-04-01",
+        "monthly": 0.8956,
+        "accumulated": 5.9453,
+        "yoy": 15.0051
+      },
+      {
+        "date": "2025-05-01",
+        "monthly": 3.6499,
+        "accumulated": 9.8122,
+        "yoy": 18.4565
+      },
+      {
+        "date": "2025-06-01",
+        "monthly": 5.207,
+        "accumulated": 15.5301,
+        "yoy": 23.9612
+      },
+      {
+        "date": "2025-07-01",
+        "monthly": 1.199,
+        "accumulated": 16.9153,
+        "yoy": 24.8566
+      },
+      {
+        "date": "2025-08-01",
+        "monthly": 1.0074,
+        "accumulated": 18.0932,
+        "yoy": 24.1494
+      },
+      {
+        "date": "2025-09-01",
+        "monthly": 0.2016,
+        "accumulated": 18.3312,
+        "yoy": 23.315
+      },
+      {
+        "date": "2025-10-01",
+        "monthly": 0.7523,
+        "accumulated": 19.2214,
+        "yoy": 22.2325
+      },
+      {
+        "date": "2025-11-01",
+        "monthly": 0.3961,
+        "accumulated": 19.6937,
+        "yoy": 20.9646
+      },
+      {
+        "date": "2025-12-01",
+        "monthly": 0.5898,
+        "accumulated": 20.3996,
+        "yoy": 20.3996
+      },
+      {
+        "date": "2026-01-01",
+        "monthly": 1.3081,
+        "accumulated": 1.3081,
+        "yoy": 19.6369
+      },
+      {
+        "date": "2026-02-01",
+        "monthly": -0.6197,
+        "accumulated": 0.6803,
+        "yoy": 17.4126
+      },
+      {
+        "date": "2026-03-01",
+        "monthly": -0.3393,
+        "accumulated": 0.3386,
+        "yoy": 15.0493
+      },
+      {
+        "date": "2026-04-01",
+        "monthly": 0.1357,
+        "accumulated": 0.4748,
+        "yoy": 14.1828
+      },
+      {
+        "date": "2026-05-01",
+        "monthly": 2.13,
+        "accumulated": 2.62,
+        "yoy": 12.51
+      },
+      {
+        "date": "2026-06-01",
+        "monthly": 2.1458,
+        "accumulated": 4.8169,
+        "yoy": 9.2348
+      },
+      {
+        "date": "2026-07-01",
+        "monthly": -2.79,
+        "accumulated": 1.89,
+        "yoy": 4.93
+      }
+    ],
+    "monetary_base_mn_ufv": [
+      {
+        "date": "2025-11-30",
+        "value": 122816.707
+      },
+      {
+        "date": "2025-12-31",
+        "value": 132264.576
+      },
+      {
+        "date": "2026-01-31",
+        "value": 127316.669
+      },
+      {
+        "date": "2026-02-28",
+        "value": 126699.277
+      },
+      {
+        "date": "2026-03-31",
+        "value": 124807.283
+      },
+      {
+        "date": "2026-04-30",
+        "value": 122473.171
+      },
+      {
+        "date": "2026-05-31",
+        "value": 120001.866
+      },
+      {
+        "date": "2026-06-30",
+        "value": 121935.105
+      },
+      {
+        "date": "2026-07-31",
+        "value": 120421.262
+      },
+      {
+        "date": "2026-08-05",
+        "value": 123301.539
+      },
+      {
+        "date": "2026-08-10",
+        "value": 126890.697
+      },
+      {
+        "date": "2026-08-11",
+        "value": 125614.294
+      },
+      {
+        "date": "2026-08-12",
+        "value": 125842.202
+      },
+      {
+        "date": "2026-08-13",
+        "value": 126439.139
+      },
+      {
+        "date": "2026-08-14",
+        "value": 127466.539
+      },
+      {
+        "date": "2026-08-20",
+        "value": 127456.0
+      }
+    ],
+    "rin_headline": [
+      {
+        "date": "2025-11-30",
+        "value": 3261.38
+      },
+      {
+        "date": "2025-12-31",
+        "value": 3713.245
+      },
+      {
+        "date": "2026-01-31",
+        "value": 4416.733
+      },
+      {
+        "date": "2026-02-28",
+        "value": 4320.167
+      },
+      {
+        "date": "2026-03-31",
+        "value": 3542.852
+      },
+      {
+        "date": "2026-04-30",
+        "value": 3706.135
+      },
+      {
+        "date": "2026-05-31",
+        "value": 4546.784
+      },
+      {
+        "date": "2026-06-30",
+        "value": 3617.271
+      },
+      {
+        "date": "2026-07-31",
+        "value": 3631.924
+      },
+      {
+        "date": "2026-08-05",
+        "value": 3772.56
+      },
+      {
+        "date": "2026-08-10",
+        "value": 4049.603
+      },
+      {
+        "date": "2026-08-11",
+        "value": 4247.224
+      },
+      {
+        "date": "2026-08-12",
+        "value": 4242.978
+      },
+      {
+        "date": "2026-08-13",
+        "value": 4305.227
+      },
+      {
+        "date": "2026-08-14",
+        "value": 4254.718
+      }
+    ],
+    "rin_including_gold_obligations": [
+      {
+        "date": "2025-11-30",
+        "value": 2514.028
+      },
+      {
+        "date": "2025-12-31",
+        "value": 2971.573
+      },
+      {
+        "date": "2026-01-31",
+        "value": 3670.906
+      },
+      {
+        "date": "2026-02-28",
+        "value": 3570.588
+      },
+      {
+        "date": "2026-03-31",
+        "value": 2789.118
+      },
+      {
+        "date": "2026-04-30",
+        "value": 2962.917
+      },
+      {
+        "date": "2026-05-31",
+        "value": 3801.295
+      },
+      {
+        "date": "2026-06-30",
+        "value": 3345.683
+      },
+      {
+        "date": "2026-07-31",
+        "value": 3361.272
+      },
+      {
+        "date": "2026-08-05",
+        "value": 3501.908
+      },
+      {
+        "date": "2026-08-10",
+        "value": 3778.951
+      },
+      {
+        "date": "2026-08-11",
+        "value": 3976.572
+      },
+      {
+        "date": "2026-08-12",
+        "value": 3972.326
+      },
+      {
+        "date": "2026-08-13",
+        "value": 4034.575
+      },
+      {
+        "date": "2026-08-14",
+        "value": 3984.066
+      }
+    ]
+  },
+  "sources": {
+    "bcb_home": "https://www.bcb.gob.bo/",
+    "bcb_tco": "https://www.bcb.gob.bo/tiposDeCambioHistorico/index.php?anio=2026",
+    "bcb_weekly": "https://www.bcb.gob.bo/webdocs/bcb_semanal/app/",
+    "ine_cpi_july": "https://www.ine.gob.bo/index.php/el-indice-de-precios-al-consumidor-disminuyo-279-en-bolivia-durante-julio-de-2026/",
+    "zenodo": "https://zenodo.org/communities/economic-analytics-institute/"
+  }
+}
