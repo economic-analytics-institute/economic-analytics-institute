@@ -14,9 +14,10 @@
   <div class="container nav-wrap">
     <a class="brand" href="#home" aria-label="Economic Analytics Institute">
       <img src="assets/brand/eai-logo-header.png"
-     alt="Economic Analytics Institute"
-     class="brand-logo" />
-
+           alt="Economic Analytics Institute"
+           class="brand-logo" />
+    </a>
+    
     <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
 
     <nav class="main-nav" id="mainNav">
@@ -328,20 +329,384 @@
 </section>
 
 <section class="section about-section" id="about">
-  <div class="container about-grid">
-    <div>
-      <p class="eyebrow" data-i18n="about.kicker">About EAI</p>
-      <h2 data-i18n="about.title">Un instituto debe parecer solvente porque su trabajo puede ser examinado.</h2>
-    </div>
-    <div class="about-copy">
-      <p data-i18n="about.p1">Economic Analytics Institute se plantea como una plataforma independiente de investigación económica aplicada, con foco inicial en Bolivia y capacidad de extender análisis comparados a América Latina.</p>
-      <div class="cred-list">
-        <div><span>01</span><strong data-i18n="about.c1">Autores identificables</strong><small>ORCID · Scholar · CV</small></div>
-        <div><span>02</span><strong data-i18n="about.c2">Fuentes trazables</strong><small>BCB · INE · ASFI · MEFP · IMF · WB</small></div>
-        <div><span>03</span><strong data-i18n="about.c3">Métodos reproducibles</strong><small>Code · Data · Appendices</small></div>
-        <div><span>04</span><strong data-i18n="about.c4">Política editorial</strong><small>Review · Versioning · Conflicts</small></div>
+  <div class="container">
+
+    <!-- INTRO -->
+    <div class="about-intro-grid">
+      <div>
+        <p class="eyebrow" data-i18n="about.kicker">Sobre EAI</p>
+
+        <h2 data-i18n="about.title">
+          Investigación económica independiente basada en evidencia.
+        </h2>
+      </div>
+
+      <div class="about-intro-copy">
+        <p class="about-lead" data-i18n="about.intro">
+          Economic Analytics Institute (EAI) es una iniciativa independiente
+          de investigación económica aplicada, orientada al análisis riguroso
+          de la economía boliviana y su relación con el entorno latinoamericano
+          e internacional.
+        </p>
+
+        <p data-i18n="about.intro2">
+          El Instituto busca combinar investigación académica, datos,
+          herramientas cuantitativas y análisis de política económica bajo
+          principios de independencia, transparencia, trazabilidad y
+          reproducibilidad.
+        </p>
       </div>
     </div>
+
+
+    <!-- MISSION -->
+    <div class="institution-block" id="mission">
+      <div class="institution-number">01</div>
+
+      <div class="institution-title">
+        <span data-i18n="about.missionLabel">PROPÓSITO</span>
+
+        <h3 data-i18n="about.missionTitle">
+          Misión
+        </h3>
+      </div>
+
+      <div class="institution-content">
+        <p data-i18n="about.mission">
+          Generar investigación económica independiente, rigurosa y
+          reproducible que contribuya a mejorar la comprensión de la economía
+          boliviana y fortalezca el debate público basado en evidencia.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- RESEARCH AREAS -->
+    <div class="institution-block research-areas-block">
+      <div class="institution-number">02</div>
+
+      <div class="institution-title">
+        <span data-i18n="about.areasLabel">AGENDA</span>
+
+        <h3 data-i18n="about.areasTitle">
+          Áreas de investigación
+        </h3>
+      </div>
+
+      <div class="institution-content">
+
+        <div class="about-research-grid">
+
+          <article>
+            <span>01</span>
+            <h4 data-i18n="about.area1">
+              Macroeconomía y política monetaria
+            </h4>
+            <p data-i18n="about.area1p">
+              Inflación, crecimiento, dinero, reservas internacionales,
+              régimen cambiario, tasas de interés y transición hacia metas
+              de inflación.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h4 data-i18n="about.area2">
+              Precios y redes económicas
+            </h4>
+            <p data-i18n="about.area2p">
+              Propagación de shocks, persistencia inflacionaria, formación
+              de precios, redes dinámicas y mecanismos de contagio.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h4 data-i18n="about.area3">
+              Estabilidad financiera y riesgo sistémico
+            </h4>
+            <p data-i18n="about.area3p">
+              Banca, liquidez, solvencia, rentabilidad, interconexiones,
+              vulnerabilidad y contagio financiero.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h4 data-i18n="about.area4">
+              Data Science e Inteligencia Artificial
+            </h4>
+            <p data-i18n="about.area4p">
+              Nowcasting, procesamiento de lenguaje natural, modelos de
+              lenguaje, automatización, scraping y sistemas de información.
+            </p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <h4 data-i18n="about.area5">
+              Política económica
+            </h4>
+            <p data-i18n="about.area5p">
+              Evaluación de políticas, sector fiscal, sector externo,
+              reformas económicas y análisis institucional.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PRINCIPLES -->
+    <div class="institution-block" id="integrity">
+      <div class="institution-number">03</div>
+
+      <div class="institution-title">
+        <span data-i18n="about.principlesLabel">ESTÁNDARES</span>
+
+        <h3 data-i18n="about.principlesTitle">
+          Principios de investigación
+        </h3>
+      </div>
+
+      <div class="institution-content">
+
+        <div class="principles-grid">
+
+          <article>
+            <strong data-i18n="about.principle1">
+              Independencia
+            </strong>
+            <p data-i18n="about.principle1p">
+              Los análisis, metodologías y conclusiones se desarrollan con
+              autonomía técnica.
+            </p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle2">
+              Transparencia
+            </strong>
+            <p data-i18n="about.principle2p">
+              Las fuentes, definiciones, fechas de corte y supuestos deben
+              ser identificables.
+            </p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle3">
+              Reproducibilidad
+            </strong>
+            <p data-i18n="about.principle3p">
+              Cuando sea posible, los trabajos incorporarán datos, código,
+              anexos y documentación metodológica.
+            </p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle4">
+              Rigor metodológico
+            </strong>
+            <p data-i18n="about.principle4p">
+              Las conclusiones deben estar respaldadas por métodos explícitos
+              y evidencia verificable.
+            </p>
+          </article>
+
+          <article>
+            <strong data-i18n="about.principle5">
+              Integridad académica
+            </strong>
+            <p data-i18n="about.principle5p">
+              Se promueven la correcta citación, la declaración de conflictos
+              de interés y la trazabilidad de resultados.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- RESEARCH LEADERSHIP -->
+    <div class="institution-block people-block" id="people">
+      <div class="institution-number">04</div>
+
+      <div class="institution-title">
+        <span data-i18n="about.peopleLabel">PERSONAS</span>
+
+        <h3 data-i18n="about.peopleTitle">
+          Dirección e investigación
+        </h3>
+      </div>
+
+      <div class="institution-content">
+
+        <article class="researcher-card">
+
+          <div class="researcher-monogram">
+            PCH
+          </div>
+
+          <div class="researcher-main">
+
+            <span class="researcher-role">
+              Founder & Lead Economist
+            </span>
+
+            <h4>Pablo Cachaga Herrera</h4>
+
+            <p data-i18n="about.pabloBio">
+              Economista e investigador con interés en macroeconomía,
+              política monetaria, inflación, estabilidad financiera,
+              redes económicas y métodos cuantitativos aplicados.
+            </p>
+
+            <div class="researcher-fields">
+              <span>Macroeconomics</span>
+              <span>Monetary Policy</span>
+              <span>Inflation</span>
+              <span>Networks</span>
+              <span>Financial Stability</span>
+              <span>Data Science</span>
+            </div>
+
+            <div class="researcher-links">
+              <a href="#publications">
+                Publications
+              </a>
+
+              <a href="#" class="coming-link">
+                ORCID
+              </a>
+
+              <a href="#" class="coming-link">
+                Google Scholar
+              </a>
+
+              <a href="#" class="coming-link">
+                LinkedIn
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- RESEARCH INTEGRITY -->
+    <div class="institution-block editorial-block" id="editorial">
+      <div class="institution-number">05</div>
+
+      <div class="institution-title">
+        <span data-i18n="about.integrityLabel">GOBERNANZA</span>
+
+        <h3 data-i18n="about.integrityTitle">
+          Integridad y política editorial
+        </h3>
+      </div>
+
+      <div class="institution-content">
+
+        <p data-i18n="about.integrityIntro">
+          EAI busca aplicar estándares claros para la producción, revisión,
+          publicación y actualización de sus investigaciones y productos
+          analíticos.
+        </p>
+
+        <div class="policy-grid">
+
+          <article>
+            <span>01</span>
+            <strong data-i18n="about.policy1">
+              Política editorial
+            </strong>
+            <p data-i18n="about.policy1p">
+              Criterios para publicación, revisión, clasificación y
+              actualización de documentos.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <strong data-i18n="about.policy2">
+              Datos y reproducibilidad
+            </strong>
+            <p data-i18n="about.policy2p">
+              Documentación de fuentes, transformaciones, código y anexos
+              cuando las restricciones de datos lo permitan.
+            </p>
+          </article>
+
+          <article id="conflicts">
+            <span>03</span>
+            <strong data-i18n="about.policy3">
+              Conflictos de interés
+            </strong>
+            <p data-i18n="about.policy3p">
+              Los autores deberán declarar relaciones que puedan ser
+              relevantes para la interpretación de un trabajo.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <strong data-i18n="about.policy4">
+              Correcciones y versiones
+            </strong>
+            <p data-i18n="about.policy4p">
+              Los documentos podrán registrar versiones, correcciones y
+              actualizaciones de manera trazable.
+            </p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <strong data-i18n="about.policy5">
+              Uso responsable de IA
+            </strong>
+            <p data-i18n="about.policy5p">
+              Las herramientas de inteligencia artificial pueden apoyar
+              procesos de investigación, pero no sustituyen la responsabilidad
+              intelectual de los autores.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="institution-contact">
+
+      <div>
+        <p class="eyebrow" data-i18n="about.contactLabel">
+          CONTACTO
+        </p>
+
+        <h3 data-i18n="about.contactTitle">
+          Investigación, datos y colaboración.
+        </h3>
+      </div>
+
+      <div>
+        <p data-i18n="about.contactText">
+          Para consultas académicas, colaboración, acceso a investigación
+          o información institucional:
+        </p>
+
+        <a class="institution-email"
+           href="mailto:economic.analytics.institute@gmail.com">
+          economic.analytics.institute@gmail.com
+        </a>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
