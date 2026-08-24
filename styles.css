@@ -117,3 +117,31 @@ input,select,textarea{width:100%;border:1px solid #cbc5bc;background:white;paddi
     height: 42px;
   }
 }
+.nav-wrap {
+  min-height: 88px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 64px;
+  max-width: 430px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .nav-wrap {
+    min-height: 68px;
+  }
+
+  .brand-logo {
+    height: 44px;
+    max-width: 260px;
+  }
+}
