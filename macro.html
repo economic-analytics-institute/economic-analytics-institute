@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bolivia Macro Monitor | EAI</title>
+  <meta name="description" content="Bolivia Macro Monitor de Economic Analytics Institute: tipo de cambio, inflación, base monetaria y reservas con fuentes trazables." />
+  <link rel="icon" type="image/png" href="assets/brand/eai-favicon.png" />
+  <link rel="stylesheet" href="macro.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="m-header">
+  <div class="m-container m-nav">
+    <a href="index.html" class="m-brand"><img src="assets/brand/eai-logo-header.png" alt="Economic Analytics Institute"></a>
+    <nav><a href="index.html">← <span data-t="back">Volver a EAI</span></a><button class="lang active" data-lang="es">ES</button><span>/</span><button class="lang" data-lang="en">EN</button></nav>
+  </div>
+</header>
+<main>
+<section class="m-hero">
+  <div class="m-container">
+    <div class="m-kicker">EAI · INTERACTIVE RESEARCH</div>
+    <div class="m-hero-grid">
+      <div><h1>Bolivia Macro Monitor</h1><p data-t="lead">Indicadores seleccionados de la economía boliviana con fecha de corte, definiciones comparables y acceso a la fuente.</p></div>
+      <div class="m-status"><span></span><b data-t="official">Fuentes oficiales</b><small>BCB · INE · EAI compilation</small></div>
+    </div>
+  </div>
+</section>
+<section class="m-container kpi-grid" id="kpis">
+  <article><small data-t="tco">TCO</small><strong id="kpi-tco">—</strong><span id="date-tco">—</span></article>
+  <article><small data-t="cpi12">IPC 12M</small><strong id="kpi-cpi">—</strong><span id="date-cpi">—</span></article>
+  <article><small data-t="rin">RIN</small><strong id="kpi-rin">—</strong><span id="date-rin">—</span></article>
+  <article><small data-t="base">Base MN+UFV</small><strong id="kpi-base">—</strong><span id="date-base">—</span></article>
+  <article><small>TRe MN</small><strong id="kpi-tre">—</strong><span>AGO 2026</span></article>
+  <article><small data-t="gold">Oro</small><strong id="kpi-gold">—</strong><span id="date-gold">—</span></article>
+</section>
+<section class="m-container monitor-nav"><a href="#cambiario" data-t="fx">Cambiario</a><a href="#precios" data-t="prices">Precios</a><a href="#monetario" data-t="monetary">Monetario</a><a href="#reservas" data-t="reserves">Reservas</a></section>
+
+<section class="m-section m-container" id="cambiario">
+ <div class="section-head"><div><span>01</span><h2 data-t="fxTitle">Tipo de cambio oficial</h2></div><p data-t="fxLead">Evolución diaria del TCO y volumen transado desde el cambio de régimen de junio.</p></div>
+ <div class="chart-card"><div class="chart-top"><div><b data-t="fxChart">TCO y volumen negociado</b><small>Bs/USD · USD MM</small></div><button data-download="tco_daily" data-t="csv">Descargar CSV</button></div><div class="canvas-wrap"><canvas id="chartFx"></canvas></div></div>
+ <div class="reading"><strong data-t="reading">Lectura EAI</strong><p id="fxReading"></p><a href="https://www.bcb.gob.bo/tiposDeCambioHistorico/index.php?anio=2026" target="_blank" rel="noopener" data-t="source">Fuente oficial ↗</a></div>
+</section>
+
+<section class="m-section m-container" id="precios">
+ <div class="section-head"><div><span>02</span><h2 data-t="priceTitle">Inflación</h2></div><p data-t="priceLead">Variación mensual y a doce meses para separar el movimiento del mes de la tendencia inflacionaria.</p></div>
+ <div class="chart-card"><div class="chart-top"><div><b data-t="priceChart">IPC mensual y 12 meses</b><small>%</small></div><button data-download="inflation_monthly" data-t="csv">Descargar CSV</button></div><div class="canvas-wrap"><canvas id="chartCpi"></canvas></div></div>
+ <div class="reading"><strong data-t="reading">Lectura EAI</strong><p id="cpiReading"></p><a href="https://www.ine.gob.bo/index.php/el-indice-de-precios-al-consumidor-disminuyo-279-en-bolivia-durante-julio-de-2026/" target="_blank" rel="noopener" data-t="source">Fuente oficial ↗</a></div>
+</section>
+
+<section class="m-section m-container" id="monetario">
+ <div class="section-head"><div><span>03</span><h2 data-t="monTitle">Condiciones monetarias</h2></div><p data-t="monLead">Base monetaria en moneda nacional y UFV, comparada con la meta del programa monetario.</p></div>
+ <div class="chart-card"><div class="chart-top"><div><b data-t="baseChart">Base monetaria MN+UFV</b><small>Bs MM</small></div><button data-download="monetary_base_mn_ufv" data-t="csv">Descargar CSV</button></div><div class="canvas-wrap"><canvas id="chartBase"></canvas></div></div>
+ <div class="reading"><strong data-t="reading">Lectura EAI</strong><p id="baseReading"></p><a href="https://www.bcb.gob.bo/" target="_blank" rel="noopener" data-t="source">Fuente oficial ↗</a></div>
+</section>
+
+<section class="m-section m-container" id="reservas">
+ <div class="section-head"><div><span>04</span><h2 data-t="rinTitle">Reservas internacionales</h2></div><p data-t="rinLead">Dos definiciones oficiales para hacer explícita la diferencia que generan las obligaciones relativas al oro.</p></div>
+ <div class="chart-card"><div class="chart-top"><div><b data-t="rinChart">RIN: definición principal y alternativa</b><small>USD MM</small></div><button data-download="rin_headline" data-t="csv">Descargar CSV</button></div><div class="canvas-wrap"><canvas id="chartRin"></canvas></div></div>
+ <div class="reading"><strong data-t="reading">Lectura EAI</strong><p id="rinReading"></p><a href="https://www.bcb.gob.bo/webdocs/bcb_semanal/app/" target="_blank" rel="noopener" data-t="source">Fuente oficial ↗</a></div>
+</section>
+
+<section class="m-container methodology"><div><span>METODOLOGÍA</span><h2 data-t="methodTitle">Trazabilidad antes que falsa precisión.</h2></div><div><p data-t="methodText">Cada KPI conserva su propia fecha de corte. EAI no fuerza series con frecuencias distintas a una misma fecha y muestra definiciones alternativas cuando son materialmente diferentes.</p><p class="data-note" data-t="dataNote">Esta versión utiliza una extracción estática preparada para el taller. La automatización desde fuentes oficiales será la siguiente etapa.</p></div></section>
+</main>
+<footer><div class="m-container"><span>© 2026 Economic Analytics Institute</span><a href="index.html">Research · Data · Policy</a></div></footer>
+<script src="macro.js"></script>
+</body></html>
