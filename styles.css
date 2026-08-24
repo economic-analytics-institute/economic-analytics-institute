@@ -99,3 +99,21 @@ input,select,textarea{width:100%;border:1px solid #cbc5bc;background:white;paddi
  .cred-list>div{grid-template-columns:35px 1fr}.cred-list small{grid-column:2}
  .footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:6px}.chat-input{grid-template-columns:1fr}
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  height: 56px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 42px;
+  }
+}
