@@ -100,55 +100,389 @@ input,select,textarea{width:100%;border:1px solid #cbc5bc;background:white;paddi
  .footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:6px}.chat-input{grid-template-columns:1fr}
 }
 
-/* ===== EAI HEADER BRANDING ===== */
+/* ==================================================
+   EAI INSTITUTION / ABOUT
+   ================================================== */
 
-.nav-wrap {
-  height: 92px;
-  min-height: 92px;
+.about-section {
+  background: var(--white);
 }
 
-.brand {
-  flex-shrink: 0;
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 80px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--line);
 }
 
-.brand-logo {
+.about-intro-grid h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 4.3vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  margin: 10px 0 0;
+  max-width: 600px;
+}
+
+.about-intro-copy {
+  max-width: 650px;
+}
+
+.about-intro-copy p {
+  color: var(--slate);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+
+.about-intro-copy .about-lead {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+
+/* institutional rows */
+
+.institution-block {
+  display: grid;
+  grid-template-columns: 70px 300px 1fr;
+  gap: 30px;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.institution-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  color: var(--copper);
+}
+
+.institution-title span {
   display: block;
-  width: 330px;
-  height: auto;
-  object-fit: contain;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .16em;
+  color: #8c8984;
+  margin-bottom: 10px;
 }
 
-/* Para pantallas medianas */
-@media (max-width: 1150px) {
-  .brand-logo {
-    width: 270px;
-  }
-
-  .main-nav {
-    gap: 12px;
-  }
+.institution-title h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.12;
 }
 
-/* Tablet */
+.institution-content > p {
+  margin: 0;
+  color: var(--slate);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+
+/* research areas */
+
+.about-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.about-research-grid article {
+  padding: 23px;
+  min-height: 185px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.about-research-grid article > span {
+  display: block;
+  color: var(--copper);
+  font-family: Georgia, serif;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+.about-research-grid h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.18;
+  margin: 0 0 8px;
+}
+
+.about-research-grid p {
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--slate);
+  margin: 0;
+}
+
+
+/* principles */
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.principles-grid article {
+  padding: 18px 20px 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.principles-grid article:nth-child(even) {
+  padding-left: 20px;
+  border-left: 1px solid var(--line);
+}
+
+.principles-grid strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.principles-grid p {
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--slate);
+  margin: 0;
+}
+
+
+/* researcher */
+
+.researcher-card {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.researcher-monogram {
+  height: 115px;
+  width: 115px;
+  display: grid;
+  place-items: center;
+  background: var(--burgundy);
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: .03em;
+}
+
+.researcher-role {
+  display: block;
+  color: var(--burgundy);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  font-weight: 850;
+}
+
+.researcher-main h4 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin: 7px 0 8px;
+}
+
+.researcher-main > p {
+  max-width: 660px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--slate);
+}
+
+.researcher-fields {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.researcher-fields span {
+  border: 1px solid var(--line);
+  padding: 4px 7px;
+  background: white;
+  color: #73706c;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.researcher-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.researcher-links a {
+  font-size: 10px;
+  font-weight: 850;
+  color: var(--burgundy);
+}
+
+.researcher-links .coming-link {
+  color: #918d88;
+}
+
+
+/* policies */
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  margin-top: 24px;
+}
+
+.policy-grid article {
+  padding: 19px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-grid article > span {
+  display: block;
+  color: var(--copper);
+  font-family: Georgia, serif;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.policy-grid strong {
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+
+.policy-grid p {
+  font-size: 10px;
+  color: var(--slate);
+  line-height: 1.55;
+  margin: 7px 0 0;
+}
+
+
+/* contact */
+
+.institution-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 55px;
+  padding: 35px;
+  background: var(--charcoal);
+  color: white;
+}
+
+.institution-contact h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 1.12;
+  margin: 8px 0 0;
+}
+
+.institution-contact p {
+  color: #abb4b9;
+  font-size: 12px;
+  max-width: 480px;
+}
+
+.institution-email {
+  display: inline-block;
+  margin-top: 8px;
+  color: #e4c29e;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+
+/* Responsive institution */
+
+@media (max-width: 1000px) {
+
+  .about-intro-grid {
+    gap: 40px;
+  }
+
+  .institution-block {
+    grid-template-columns: 55px 230px 1fr;
+    gap: 20px;
+  }
+
+}
+
+
 @media (max-width: 850px) {
-  .main-nav {
-    top: 92px;
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
+
+  .institution-block {
+    grid-template-columns: 45px 1fr;
+  }
+
+  .institution-content {
+    grid-column: 2;
+  }
+
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .nav-wrap {
-    height: 70px;
-    min-height: 70px;
+
+@media (max-width: 600px) {
+
+  .institution-block {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 35px 0;
   }
 
-  .brand-logo {
-    width: 210px;
-    height: auto;
+  .institution-number {
+    font-size: 12px;
   }
 
-  .main-nav {
-    top: 70px;
+  .institution-content {
+    grid-column: 1;
   }
+
+  .about-research-grid,
+  .principles-grid,
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-grid article:nth-child(even) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .researcher-card {
+    grid-template-columns: 1fr;
+  }
+
+  .researcher-monogram {
+    width: 85px;
+    height: 85px;
+    font-size: 22px;
+  }
+
+  .institution-contact {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px;
+  }
+
 }
