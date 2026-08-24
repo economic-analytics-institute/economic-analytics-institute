@@ -65,3 +65,5 @@ PDF -> storage -> text extraction -> chunking -> embeddings -> vector DB -> retr
 - URLs permanentes por publicación
 - metadata OpenGraph / Schema.org
 - sitemap / robots / analytics
+
+Website deployed with Cloudflare Workers.
