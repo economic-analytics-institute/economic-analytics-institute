@@ -486,3 +486,73 @@ input,select,textarea{width:100%;border:1px solid #cbc5bc;background:white;paddi
   }
 
 }
+/* ==================================================
+   EAI HEADER — FINAL FIX
+   ================================================== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.site-header .nav-wrap {
+  height: 92px;
+  min-height: 92px;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.site-header .brand-logo {
+  display: block;
+  width: 330px;
+  max-width: 330px;
+  height: auto;
+  max-height: 76px;
+  object-fit: contain;
+}
+
+/* Pantallas medianas */
+@media (max-width: 1150px) {
+
+  .site-header .brand-logo {
+    width: 270px;
+    max-width: 270px;
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+
+  .main-nav {
+    top: 92px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .site-header .nav-wrap {
+    height: 70px;
+    min-height: 70px;
+  }
+
+  .site-header .brand-logo {
+    width: 210px;
+    max-width: 210px;
+    height: auto;
+    max-height: 52px;
+  }
+
+  .main-nav {
+    top: 70px;
+  }
+}
